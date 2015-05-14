@@ -1,5 +1,5 @@
 FROM ubuntu:trusty
-MAINTAINER Tim Haak <tim@haak.co.uk>
+MAINTAINER Wijnand van Deutekom <wijnand@vdeute.com>
 
 ENV DEBIAN_FRONTEND="noninteractive" \
     LANG="en_US.UTF-8" \
