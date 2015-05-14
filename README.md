@@ -1,5 +1,5 @@
 # HTPC-docker
-Docker config for my HTPC
+Docker config for my HTPC, Docker is some neat stuff! Take a look at http://www.docker.com if you don't know what im talking about :)
 
 ###Sabnzbd
 [Original dockerfile](https://github.com/timhaak/docker-sabnzbd) by Tim Haak
