@@ -30,13 +30,13 @@ RUN \
     sed -i '/#cluster.name:.*/a cluster.name: logstash' /etc/elasticsearch/elasticsearch.yml && \
     sed -i '/#path.data: \/path\/to\/data/a path.data: /data' /etc/elasticsearch/elasticsearch.yml
 
-ADD supervisor/config/elasticsearch.conf /etc/supervisor/conf.d/elasticsearch.conf
+ADD supervisor/conf.d/elasticsearch.conf /etc/supervisor/conf.d/elasticsearch.conf
 
 # Logstash
 RUN apt-get install -y logstash logstash-contrib && \
     apt-get clean
 
-ADD supervisor/config/logstash.conf /etc/supervisor/conf.d/logstash.conf
+ADD supervisor/conf.d/logstash.conf /etc/supervisor/conf.d/logstash.conf
 
 # Kibana
 RUN \
@@ -44,7 +44,7 @@ RUN \
     ln -s /opt/kibana-4.0.2-linux-x64 /opt/kibana && \
     sed -i 's/port: 5601/port: 80/' /opt/kibana/config/kibana.yml
 
-ADD supervisor/config/kibana.conf /etc/supervisor/conf.d/kibana.conf
+ADD supervisor/conf.d/kibana.conf /etc/supervisor/conf.d/kibana.conf
 
 EXPOSE 80
 

@@ -1,4 +1,5 @@
-baseimagename="service-elk"
+containername="service-elk"
+baseimagename="service-elk-build"
 datavolumename="datavolume-elk"
 
 find=$(docker ps -a | grep ${datavolumename} | awk '{ print $7;}')
@@ -8,8 +9,13 @@ else
     echo "Found ${find}, dont have to create a new datavolume"
 fi
 
-docker run -p 8080:80 \
-    -v $PWD/logstash:/etc/logstash \
-    -v $PWD/supervisor:/etc/supervisor \
+docker run -it \
+    -p 8080:80 \
+    -v $PWD/logstash/config:/etc/logstash \
     --volumes-from datavolume-elk \
-    aaahboogie/htpc:service-elk
+    --name ${containername} \
+    aaahboogie/htpc:${baseimagename}
+
+
+
+#    -v $PWD/supervisor:/etc/supervisor \
