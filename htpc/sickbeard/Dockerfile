@@ -21,9 +21,12 @@ RUN apt-get clean &&\
   rm -rf /var/lib/apt/lists/* &&\
   rm -rf /tmp/*
 
+ADD init.sh /opt/scripts/init.sh
+RUN chmod u+x  /opt/scripts/init.sh
+ 
 VOLUME /config
 VOLUME /data
 
 EXPOSE 8081
 
-CMD ["/usr/bin/python", "Sickbeard.py"]
+CMD ["/opt/scripts/init.sh"]

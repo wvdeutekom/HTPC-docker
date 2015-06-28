@@ -16,7 +16,7 @@ sab_nzbbackupdir="/home/wijnand/Downloads/sabnzbd/nzb"
 sickbeard_containername="sickbeard"
 sickbeard_imagename="latest"
 sickbeard_hub_repository="sickbeard"
-sickbeard_ports="8080:8081"
+sickbeard_ports="8081:8081"
 
 sickbeard_datadir="/home/wijnand/docker/dockerspace/sickbeard"
 
