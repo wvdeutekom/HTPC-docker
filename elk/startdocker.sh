@@ -10,7 +10,7 @@ else
 fi
 
 docker run -it \
-    -p 8080:80 \
+    -p 80:80 \
     -v $PWD/logstash/config:/etc/logstash \
     --volumes-from datavolume-elk \
     --name ${containername} \

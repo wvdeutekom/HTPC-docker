@@ -1,0 +1,22 @@
+# Config file
+projectname="sabnzbd"
+hub_username="wvdeutekom"
+
+# Sabnzbd
+sab_containername="sabnzbd"
+sab_imagename="latest"
+sab_hub_repository="sabnzbd"
+sab_ports="8080:8080"
+
+sab_downloaddir="/home/wijnand/Downloads/sabnzbd"
+sab_datadir="/home/wijnand/docker/dockerspace/sabnzbd"
+sab_nzbbackupdir="/home/wijnand/Downloads/sabnzbd/nzb"
+
+# Sickbeard
+sickbeard_containername="sickbeard"
+sickbeard_imagename="latest"
+sickbeard_hub_repository="sickbeard"
+sickbeard_ports="8080:8081"
+
+sickbeard_datadir="/home/wijnand/docker/dockerspace/sickbeard"
+
