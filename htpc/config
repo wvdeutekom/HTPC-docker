@@ -17,6 +17,6 @@ sickbeard_containername="sickbeard"
 sickbeard_imagename="latest"
 sickbeard_hub_repository="sickbeard"
 sickbeard_ports="8081:8081"
-
+sickbeard_destdir="/mnt/samba/Series"
 sickbeard_datadir="/home/wijnand/docker/dockerspace/sickbeard"
 

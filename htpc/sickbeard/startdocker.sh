@@ -8,4 +8,7 @@ docker run -it \
 --restart=always \
 -p ${sickbeard_ports} \
 -v ${sickbeard_datadir}:/config \
+-v ${sab_downloaddir}:/data/sabdownloads \
+-v ${sickbeard_destdir}:/data/downloaddestination \
+--link ${sab_containername}:sabnzbd \
 ${hub_username}/${sickbeard_hub_repository}:${sickbeard_imagename}
