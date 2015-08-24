@@ -3,7 +3,7 @@
 
 echo "Starting up sickbeard"
 
-docker run -dit \
+sudo docker run -dit \
 --name ${sickbeard_containername} \
 --restart=always \
 -p ${sickbeard_ports} \

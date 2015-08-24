@@ -8,7 +8,7 @@ echo "Starting up sabnzbd"
 mkdir -p ${sab_downloaddir}
 chown -R wijnand:wijnand ${sab_downloaddir}
 
-docker run -it \
+sudo docker run -it \
 --name ${sab_containername} \
 --restart=always \
 -p ${sab_ports} \

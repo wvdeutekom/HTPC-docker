@@ -2,6 +2,9 @@
 projectname="sabnzbd"
 hub_username="wvdeutekom"
 
+# General
+mnt_series="/mnt/samba/Series"
+
 # Sabnzbd
 sab_containername="sabnzbd"
 sab_imagename="latest"
@@ -20,3 +23,8 @@ sickbeard_ports="8081:8081"
 sickbeard_destdir="/mnt/samba/Series"
 sickbeard_datadir="/home/wijnand/docker/dockerspace/sickbeard"
 
+# Sonarr
+sonarr_containername="sonarr"
+sonarr_imagename="latest"
+sonarr_hub_repository="sonarr"
+sonarr_ports="8989:8989"
