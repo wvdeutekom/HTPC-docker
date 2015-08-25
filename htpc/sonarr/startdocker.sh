@@ -3,7 +3,7 @@
 
 echo "Starting up Sonarr"
 
-sudo docker run -it \
+sudo docker run -dit \
 --restart always \
 --name ${sonarr_containername} \
 -p ${sonarr_ports} \

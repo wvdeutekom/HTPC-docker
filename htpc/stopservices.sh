@@ -6,7 +6,7 @@ echo "Stopping ${projectname} services.."
 
 # Stop all the relevant docker containers
 stopcontainers () {
-  for i in $(docker ps -a | grep "${sickbeard_containername}\|${sab_containername}" | cut -f1 -d" "); do
+  for i in $(docker ps -a | grep "${sonarr_containername}\|${sab_containername}" | cut -f1 -d" "); do
     echo "stopping $1"
     docker stop $i;
   done
@@ -29,7 +29,7 @@ confirm () {
 
 # delete all the relevant docker containers (not the datavolume!)
 deletecontainers () {
-    for i in $(docker ps -a | grep "${sickbeard_containername}\|${sab_containername}" | cut -f1 -d" "); do
+    for i in $(docker ps -a | grep "${sonarr_containername}\|${sab_containername}" | cut -f1 -d" "); do
       echo "deleting $1"
       docker rm $i;
     done
