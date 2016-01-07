@@ -11,7 +11,7 @@ sab_imagename="latest"
 sab_hub_repository="sabnzbd"
 sab_ports="8080:8080"
 
-sab_downloaddir="/home/wijnand/Downloads/sabnzbd"
+sab_downloaddir="/mnt/hdd1/sabnzbd"
 sab_datadir="/home/wijnand/docker/dockerspace/sabnzbd"
 sab_nzbbackupdir="/home/wijnand/Downloads/sabnzbd/nzb"
 

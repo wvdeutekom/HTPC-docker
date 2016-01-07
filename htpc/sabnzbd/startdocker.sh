@@ -9,6 +9,7 @@ mkdir -p ${sab_downloaddir}
 chown -R wijnand:wijnand ${sab_downloaddir}
 
 sudo docker run -dit \
+--privileged=true \
 --name ${sab_containername} \
 --restart=always \
 -p ${sab_ports} \
